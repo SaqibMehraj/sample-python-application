@@ -4,21 +4,18 @@ This project demonstrates how to create a simple web server using Python's built
 
 ## Dependencies
 
-This project requires Python 3.5 or higher.
+1.This project requires Python 3.5 or higher.
+2.Docker engine
+
 
 ## How to Run
 
 To run the server, follow these steps:
 
 1. Clone this repository in your server
-2. Open a terminal or command prompt.
-3. Navigate to the directory containing the `app.py` file.
-4. Run the following command:
-    ```python app.py```
-
-Please note that if you have a Python 3 package installed under the name 'python3', you can run the application using the command ```python3 app.py```.
-
-6. The server will start and you will see a message saying `Server running at localhost:8000...`.
+2. Build the image using ```docker build -t sample-application .```
+3. Execute the image using ```docker run -p 8000:8000 sample-application```
+4. The server will start and you will see a message saying `Server running at localhost:8000...`.
 
 ## Accessing the Web Server
 
